@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed&display=swap');
+
+body {
+    padding: 0 2%;
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url(/images/the-background-1911663_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+   background-color: #DBD2E0;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: back;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+header{
+    margin-top: 10px;
+}
+@keyframes back{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }    
+}
+nav {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;
+}
+nav .profile {
+    display: flex;
+    align-items: center;
+}
+nav .profile img {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ margin-top: 5px;
+}
+nav .profile h1 {
+    margin: 5px;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav ul li {
+ margin-left: 25px;
+ cursor: pointer;
+ border-bottom: 1px solid white;
+}
+nav ul li:hover {
+    border-bottom-color: blue ;
+}
+.page-content {
+    margin: 5%;
+
+}
+.h1{
+    margin-top: auto;
+    margin-left: auto;
+}
+.page-content header {
+    max-width: 50%;
+}
+.page-content header h1 {
+    margin:0;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 6vw;
+     
+}
+
+
+.button {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 15px;
+    border-radius: 5rem;
+    margin-top: 40px;
+}
+    
+
+nav {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ position: sticky;
+ top: 0;
+}
+nav .profile {
+    display: flex;
+    align-items: center;
+}
+nav .profile img {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+object-fit: cover;
+
+}
+nav .profile h1 {
+    margin: 5px;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav ul li {
+ margin-left: 25px;
+ cursor: pointer;
+ border-bottom: 1px solid white;
+}
+nav ul li:hover {
+    border-bottom-color: blue ;
+}
+.page-content {
+    margin: 5%;
+}
+.page-content header {
+    margin-top: 20%;
+    max-width: 80%;
+}
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 6vw;
+}
+.button {
+    background-color: yellow;
+    border: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 15px;
+    border-radius: 5rem;
+    margin-top: 30px;
+}
+ 
+    

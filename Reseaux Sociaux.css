@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #DBD2E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+header h1 {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    margin-top: 0;
+}
+.box{
+    display: flex;
+}
+
+#checkbox{
+    width: 120px;
+    height: 120px;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: white;
+    cursor: pointer;
+    position: relative;
+}
+#checkbox:hover, .menu .menuItems:hover{
+    background: rgba(255,255,255,.7);
+}
+#checkbox::before{
+    content: '\f1e0';
+    font-family: 'font awesome 5 free';
+    font-weight: 900;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1.5s;
+}
+#checkbox:checked::before{
+    content: '\f00d';
+}
+#checkbox:checked ~ .menu{
+    width: 366px;
+}
+
+.menu{
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    transition: all .5s;
+}
+.menu .menuItems{
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-left: 2px solid rgb(165,165,165);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu .menuItems i {
+    font-size: 4.5rem;
+}
+.button {
+    background-color: grey;
+    color:white;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border-bottom: #636464 solid;
+    transition: all 1;
+    -webkit-transition: all .1;
+    float: left;
+    margin-left: 40%;
+    margin-top: 40%;
+}
+.button:active{
+    transform: translate(0, 5px)
+    -webkit-transform: translate(0, 5px);
+    border-bottom: 1px solid;
+}
